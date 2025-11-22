@@ -127,14 +127,6 @@ spring.security.user.name=admin
 spring.security.user.password=password
 spring.security.user.roles=USER
 ```
-
-### Controller
-control the endpoint
-### Models
-represent data as entity and relationship among them.
-### View
-receive data from controller and show with frontend.
-
   
 ## 📚 API Endpoints
 
@@ -168,6 +160,14 @@ All endpoints require Basic Authentication:
 - **Name**: Required, 2-100 characters
 - **Description**: Required, 5-500 characters  
 - **Price**: Required, minimum 0.01
+
+### Controller
+- control the endpoint
+### Models
+- represent data as entity and relationship among them.
+### View
+- receive data from controller and show with frontend.
+
 
 ## 🧪 Testing the API
 
