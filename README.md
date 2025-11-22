@@ -56,7 +56,7 @@ java -version
 productmgmnt/
 ├── src/
 │   ├── main/
-│   │   ├── java/com/fullstack/
+│   │   ├── java/com/crudapi/
 │   │   │   ├── advice/
 │   │   │   │   └── GlobalExceptionHandler.java    # Global error handling
 │   │   │   ├── config/
@@ -101,7 +101,7 @@ spring.datasource.password=your_password_here
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 
 # JPA/Hibernate Configuration
-spring.jpa.hibernate.ddl-auto=create-drop
+spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
 ```
@@ -114,40 +114,36 @@ spring.security.user.password=password
 spring.security.user.roles=USER
 ```
 
+## Quickstart
+
+1. Clone the repository
+2. Open the project in your IDE: IntelliJ IDEA
+3. Make sure you are in the `productmgmnt` directory
+4. Configure the database connection in `application.properties` file (check the [Database](#database) section below for more info)
+5. Run the project (by running the `main` method in `ProductManagementApiApplication.java`)
+6. Open http://localhost:8080/ in your browser!
+   * If you ran the [`basedata.sql`](https://github.com/jaygajera17/E-commerce-project-springBoot/blob/master2/JtProject/basedata.sql)script on the database, you can log in with the following credentials as admin; otherwise you'll have to manually create an admin user in the database:
+     * Username: `admin`
+     * Password: `123`
+   * Log in as a normal user:
+     * Username: `lisa`
+     * Password: `765`
+    
+       
 ## 🚀 Getting Started
 
 ### 1. Clone the Repository
 ```bash
-git clone <your-repository-url>
-cd productmgmntcrud/productmgmnt
+1. git clone <your-repository-url>
+2. Open the project in your IDE: IntelliJ IDEA
+3. cd productmgmntcrud/productmgmnt
 ```
 
 ### 2. Configure Database
 - Ensure MySQL is running
 - Update `application.properties` with your database credentials
 
-### 3. Build the Project
-```bash
-# Windows
-.\mvnw.cmd clean install
 
-# Linux/Mac
-./mvnw clean install
-```
-
-### 4. Run the Application
-```bash
-# Windows
-.\mvnw.cmd spring-boot:run
-
-# Linux/Mac
-./mvnw spring-boot:run
-```
-
-Or run the JAR file:
-```bash
-java -jar target/productmgmnt-0.0.1-SNAPSHOT.jar
-```
 
 ### 5. Verify Installation
 - Application will start on `http://localhost:8080`
