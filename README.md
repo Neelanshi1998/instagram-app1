@@ -83,6 +83,18 @@ productmgmnt/
 └── README.md
 ```
 
+## Quickstart
+
+1. Clone the repository
+2. Open the project in your IDE: IntelliJ IDEA
+3. Make sure you are in the `productmgmnt` directory
+4. Configure the database connection and security configurations in `application.properties` file (check the [Database](#database-setup) section below for more info)
+5. Run the project (by running the `main` method in `ProductManagementApiApplication.java`)
+6. Verify Installation: Open http://localhost:8080/ in your browser!
+- Application will start on `http://localhost:8080`
+- Swagger UI: `http://localhost:8080/swagger-ui.html`
+- API Docs: `http://localhost:8080/v3/api-docs`   
+
 ## ⚙️ Configuration
 
 ### Database Setup
@@ -113,43 +125,16 @@ spring.security.user.name=admin
 spring.security.user.password=password
 spring.security.user.roles=USER
 ```
+# Workflow
+- ![image](https://github.com/jaygajera17/E-commerce-project-springBoot/assets/81226571/69951cb7-65e2-4225-8681-2542859aaec6)
+### Controller
+- control the endpoint
+### Models
+- represent data as entity and relationship among them.
+### View
+- receive data from controller and show with frontend.
 
-## Quickstart
-
-1. Clone the repository
-2. Open the project in your IDE: IntelliJ IDEA
-3. Make sure you are in the `productmgmnt` directory
-4. Configure the database connection in `application.properties` file (check the [Database](#database) section below for more info)
-5. Run the project (by running the `main` method in `ProductManagementApiApplication.java`)
-6. Open http://localhost:8080/ in your browser!
-   * If you ran the [`basedata.sql`](https://github.com/jaygajera17/E-commerce-project-springBoot/blob/master2/JtProject/basedata.sql)script on the database, you can log in with the following credentials as admin; otherwise you'll have to manually create an admin user in the database:
-     * Username: `admin`
-     * Password: `123`
-   * Log in as a normal user:
-     * Username: `lisa`
-     * Password: `765`
-    
-       
-## 🚀 Getting Started
-
-### 1. Clone the Repository
-```bash
-1. git clone <your-repository-url>
-2. Open the project in your IDE: IntelliJ IDEA
-3. cd productmgmntcrud/productmgmnt
-```
-
-### 2. Configure Database
-- Ensure MySQL is running
-- Update `application.properties` with your database credentials
-
-
-
-### 5. Verify Installation
-- Application will start on `http://localhost:8080`
-- Swagger UI: `http://localhost:8080/swagger-ui.html`
-- API Docs: `http://localhost:8080/v3/api-docs`
-
+  
 ## 📚 API Endpoints
 
 ### Authentication
@@ -235,28 +220,6 @@ curl -X DELETE http://localhost:8080/products/1 \
 2. Click "Authorize" and enter credentials (`admin`/`password`)
 3. Test endpoints interactively
 
-## 🔧 Development
-
-### Running Tests
-```bash
-# Windows
-.\mvnw.cmd test
-
-# Linux/Mac
-./mvnw test
-```
-
-### Building for Production
-```bash
-# Windows
-.\mvnw.cmd clean package -Dmaven.test.skip=true
-
-# Linux/Mac
-./mvnw clean package -Dmaven.test.skip=true
-```
-
-### Hot Reload (Development)
-The application includes Spring Boot DevTools for automatic restart during development.
 
 ## 📊 Error Handling
 
@@ -299,47 +262,30 @@ The API provides comprehensive error responses:
 - **Application Logs**: Standard Spring Boot logging
 - **Health Check**: Available at `/actuator/health` (if actuator is enabled)
 
-## 🚀 Deployment
+## Spring Boot
 
-### Docker Deployment (Optional)
-Create `Dockerfile`:
-```dockerfile
-FROM openjdk:17-jre-slim
-COPY target/productmgmnt-0.0.1-SNAPSHOT.jar app.jar
-EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "/app.jar"]
-```
+For any information about Spring Boot, here are some useful links!
 
-Build and run:
-```bash
-docker build -t product-management-api .
-docker run -p 8080:8080 product-management-api
-```
+### Reference Documentation
+For further reference, please consider the following sections:
 
-## 🤝 Contributing
+* [Official Apache Maven documentation](https://maven.apache.org/guides/index.html)
+* [Spring Boot Maven Plugin Reference Guide](https://docs.spring.io/spring-boot/docs/2.6.4/maven-plugin/reference/html/)
+* [Create an OCI image](https://docs.spring.io/spring-boot/docs/2.6.4/maven-plugin/reference/html/#build-image)
+* [Spring Web](https://docs.spring.io/spring-boot/docs/2.6.4/reference/htmlsingle/#boot-features-developing-web-applications)
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit changes (`git commit -m 'Add amazing feature'`)
-4. Push to branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+### Guides
+The following guides illustrate how to use some features concretely:
 
-## 📝 License
+* [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
+* [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
+* [Building REST services with Spring](https://spring.io/guides/tutorials/bookmarks/)
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+## Preview
 
-## 📞 Support
+![image](https://github.com/jaygajera17/E-commerce-project-springBoot/assets/81226571/02a04d3c-1fc9-418c-b231-639f6525d07e)
+![image](https://github.com/jaygajera17/E-commerce-project-springBoot/assets/81226571/24c4451b-43a6-4c23-a78a-786eab4303b0)
+![image](https://github.com/jaygajera17/E-commerce-project-springBoot/assets/81226571/93c1baeb-326c-450f-867e-a883900a6644)
 
-For support and questions:
-- Create an issue in the repository
-- Contact: [your-email@example.com]
-
-## 🔄 Version History
-
-- **v1.0.0** - Initial release with full CRUD operations
-- **v1.1.0** - Added authentication and validation
-- **v1.2.0** - Enhanced error handling and documentation
-
----
 
 **Happy Coding! 🎉**
