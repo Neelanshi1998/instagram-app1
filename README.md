@@ -285,7 +285,7 @@ The following guides illustrate how to use some features concretely:
 
 ![API Overview](images/api-overview.png)
 ![Swagger UI](images/swagger-ui.png)
-![image](https://github.com/jaygajera17/E-commerce-project-springBoot/assets/81226571/93c1baeb-326c-450f-867e-a883900a6644)
+![image](images/swagger-ui.png)
 
 
 **Happy Coding! 🎉**
