@@ -127,14 +127,10 @@ spring.security.user.name=admin
 spring.security.user.password=password
 spring.security.user.roles=USER
 ```
-# Workflow
-- ![image](https://github.com/jaygajera17/E-commerce-project-springBoot/assets/81226571/69951cb7-65e2-4225-8681-2542859aaec6)
-### Controller
-- control the endpoint
-### Models
-- represent data as entity and relationship among them.
-### View
-- receive data from controller and show with frontend.
+
+### Controller - control the endpoint
+### Models - represent data as entity and relationship among them.
+### View - receive data from controller and show with frontend.
 
   
 ## 📚 API Endpoints
@@ -285,9 +281,14 @@ The following guides illustrate how to use some features concretely:
 
 ## Preview
 
-![API Overview](images/api-overview.png)
-![Swagger UI](images/swagger-ui.png)
-![image](images/swagger-ui.png)
+![POSTMAN API](images/PostmanImage1.JPEG)
+![POSTMAN API](images/PostmanImage2.JPEG)
+![POSTMAN API](images/PostmanImage3.JPEG)
+![POSTMAN API](images/PostmanImage4.JPEG)
+![POSTMAN API](images/PostmanImage5.JPEG)
+![POSTMAN API](images/PostmanImage6.JPEG)
+![Swagger UI](images/SwaggerImage1.JPEG)
+![Swagger UI](images/SwaggerImage2.JPEG)
 
 
 **Happy Coding! 🎉**
