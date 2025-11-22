@@ -1,4 +1,3 @@
-
 # Product Management CRUD API
 
 A RESTful API built with Spring Boot that provides complete CRUD operations for product management with authentication, validation, and comprehensive error handling.
@@ -30,9 +29,10 @@ A RESTful API built with Spring Boot that provides complete CRUD operations for 
 Before running this application, ensure you have:
 
 1. **Java 17** or higher installed
-2. **Maven 3.6+** installed
-3. **MySQL 8.0+** installed and running
-4. **Git** for cloning the repository
+2. **MySQL 8.0+** installed and running
+3. **Git** for cloning the repository
+
+**Note**: Maven installation is **NOT required** - this project includes Maven Wrapper!
 
 ### Java Installation
 ```bash
@@ -42,15 +42,6 @@ java -version
 # If not installed, download from:
 # https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html
 # or use OpenJDK: https://openjdk.org/projects/jdk/17/
-```
-
-### Maven Installation
-```bash
-# Check if Maven is installed
-mvn -version
-
-# If not installed, download from:
-# https://maven.apache.org/download.cgi
 ```
 
 ### MySQL Installation
@@ -137,12 +128,20 @@ cd productmgmntcrud/productmgmnt
 
 ### 3. Build the Project
 ```bash
-mvn clean install
+# Windows
+.\mvnw.cmd clean install
+
+# Linux/Mac
+./mvnw clean install
 ```
 
 ### 4. Run the Application
 ```bash
-mvn spring-boot:run
+# Windows
+.\mvnw.cmd spring-boot:run
+
+# Linux/Mac
+./mvnw spring-boot:run
 ```
 
 Or run the JAR file:
@@ -244,12 +243,20 @@ curl -X DELETE http://localhost:8080/products/1 \
 
 ### Running Tests
 ```bash
-mvn test
+# Windows
+.\mvnw.cmd test
+
+# Linux/Mac
+./mvnw test
 ```
 
 ### Building for Production
 ```bash
-mvn clean package -Dmaven.test.skip=true
+# Windows
+.\mvnw.cmd clean package -Dmaven.test.skip=true
+
+# Linux/Mac
+./mvnw clean package -Dmaven.test.skip=true
 ```
 
 ### Hot Reload (Development)
