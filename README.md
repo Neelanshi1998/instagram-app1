@@ -81,6 +81,8 @@ productmgmnt/
 │   └── test/
 ├── pom.xml                                        # Maven dependencies
 └── README.md
+└── images
+
 ```
 
 ## Quickstart
