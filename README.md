@@ -128,9 +128,12 @@ spring.security.user.password=password
 spring.security.user.roles=USER
 ```
 
-### Controller - control the endpoint
-### Models - represent data as entity and relationship among them.
-### View - receive data from controller and show with frontend.
+### Controller
+control the endpoint
+### Models
+represent data as entity and relationship among them.
+### View
+receive data from controller and show with frontend.
 
   
 ## 📚 API Endpoints
